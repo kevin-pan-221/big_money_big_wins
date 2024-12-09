@@ -34,11 +34,11 @@ if option == "Custom Input":
     raw_inputs = np.array([QB_P, RB_P, WR_P, TE_P, OL_P, IDL_P, EDGE_P, LB_P, S_P, CB_P])
 else:
     if option == "Balanced Offense/Defense":
-        raw_inputs = np.array([15, 15, 15, 10, 10, 10, 10, 5, 5, 5])
+        raw_inputs = np.array([15, 15, 15, 10, 10, 10, 10, 5, 5, 5, 50, 50])
     elif option == "High QB Focus":
-        raw_inputs = np.array([40, 5, 10, 5, 10, 5, 5, 5, 5, 5])
+        raw_inputs = np.array([40, 5, 10, 5, 10, 5, 5, 5, 5, 5, 25, 35])
     elif option == "High Defense Focus":
-        raw_inputs = np.array([5, 5, 5, 5, 5, 10, 10, 10, 10, 10])
+        raw_inputs = np.array([5, 5, 5, 5, 5, 10, 10, 10, 10, 10, 75, 25])
 
 total = raw_inputs.sum()
 if total != 100:
